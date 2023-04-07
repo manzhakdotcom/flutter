@@ -15,6 +15,11 @@ class MyApp extends StatelessWidget {
     ];
     final ButtonStyle style =
         ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+
+    void answerQuestion() {
+      print('Answer chosen!');
+    }
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -30,12 +35,12 @@ class MyApp extends StatelessWidget {
               ),
               ElevatedButton(
                 style: style,
-                onPressed: () {},
+                onPressed: answerQuestion,
                 child: const Text('Answer 1'),
               ),
               ElevatedButton(
                 style: style,
-                onPressed: () {},
+                onPressed: answerQuestion,
                 child: const Text('Answer 2'),
               ),
             ],
